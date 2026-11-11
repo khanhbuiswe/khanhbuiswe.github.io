@@ -1,118 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- EDIT --> <title>Your Name</title>
-  <!-- EDIT --> <meta name="description" content="Software engineer based in Hanoi">
-  <!-- EDIT --> <meta property="og:title" content="Your Name">
-  <!-- EDIT --> <meta property="og:description" content="Software engineer based in Hanoi">
-  <meta property="og:type" content="website">
-  <!-- EDIT --> <!-- favicon: replace the "Y" just before %3C/text with your initial -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231C1B19'/%3E%3Ctext x='16' y='22' font-family='system-ui,sans-serif' font-size='18' font-weight='500' fill='%23FAF9F6' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #FAF9F6;
-      --fg: #1C1B19;
-      --muted: #6B6963;
-      --rule: #B4B2A9;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #161615;
-        --fg: #ECEAE4;
-        --muted: #9C9A93;
-        --rule: #5F5E5A;
-      }
-    }
-
-    *, *::before, *::after { box-sizing: border-box; }
-
-    html, body { margin: 0; }
-
-    body {
-      min-height: 100vh;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    main {
-      max-width: 36rem;
-      margin: 0 auto;
-      padding: 20vh 1.5rem 3rem;
-      animation: fade-in 400ms ease-out both;
-    }
-
-    h1 {
-      margin: 0 0 0.25rem;
-      font-size: clamp(1.5rem, 4vw, 1.75rem);
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      line-height: 1.25;
-    }
-
-    .role, .bio {
-      font-size: clamp(0.875rem, 2.5vw, 0.95rem);
-      line-height: 1.65;
-    }
-
-    .role { margin: 0 0 1.25rem; color: var(--muted); }
-    .bio { margin: 0 0 1.25rem; }
-
-    nav { font-size: 0.875rem; }
-    nav span { color: var(--muted); margin: 0 0.4rem; }
-
-    h1, .role, .bio, nav { overflow-wrap: anywhere; }
-
-    a {
-      color: inherit;
-      text-decoration: underline;
-      text-decoration-color: var(--rule);
-      text-decoration-thickness: 1px;
-      text-underline-offset: 3px;
-      transition: text-decoration-color 150ms;
-    }
-
-    a:hover { text-decoration-color: var(--fg); }
-
-    a:focus-visible {
-      outline: 2px solid var(--fg);
-      outline-offset: 3px;
-      border-radius: 2px;
-    }
-
-    @keyframes fade-in {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @media (max-width: 480px) {
-      main { padding-top: 4.5rem; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      main { animation: none; }
-      a { transition: none; }
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <!-- EDIT --> <h1>Your Name</h1>
-    <!-- EDIT --> <p class="role">Software engineer based in Hanoi</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- EDIT -->
-    <p class="bio">I build small, fast tools for the web. Currently working on video and ad tech. I like simple things that do one job well.</p>
-    <nav aria-label="Links">
-      <!-- EDIT --> <a href="https://github.com/username">GitHub</a>
-      <span aria-hidden="true">·</span>
-      <!-- EDIT --> <a href="https://www.linkedin.com/in/username">LinkedIn</a>
-      <span aria-hidden="true">·</span>
-      <!-- EDIT --> <a href="mailto:you@example.com">Email</a>
-    </nav>
-  </main>
-</body>
+    <title>Duy Khanh</title>
+    <!-- EDIT -->
+    <meta
+      name="description"
+      content="Full-stack developer working with React, Node.js, PHP, and TypeScript"
+    />
+    <!-- EDIT -->
+    <meta property="og:title" content="Duy Khanh" />
+    <!-- EDIT -->
+    <meta
+      property="og:description"
+      content="Full-stack developer working with React, Node.js, PHP, and TypeScript"
+    />
+    <meta property="og:type" content="website" />
+    <!-- EDIT -->
+    <!-- favicon: replace the "Y" just before %3C/text with your initial -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231C1B19'/%3E%3Ctext x='16' y='22' font-family='system-ui,sans-serif' font-size='18' font-weight='500' fill='%23FAF9F6' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E"
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #faf9f6;
+        --fg: #1c1b19;
+        --muted: #6b6963;
+        --rule: #b4b2a9;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #161615;
+          --fg: #eceae4;
+          --muted: #9c9a93;
+          --rule: #5f5e5a;
+        }
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--fg);
+        font-family:
+          system-ui,
+          -apple-system,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      main {
+        max-width: 36rem;
+        margin: 0 auto;
+        padding: 20vh 1.5rem 3rem;
+        animation: fade-in 400ms ease-out both;
+      }
+
+      h1 {
+        margin: 0 0 0.25rem;
+        font-size: clamp(1.5rem, 4vw, 1.75rem);
+        font-weight: 500;
+        letter-spacing: -0.01em;
+        line-height: 1.25;
+      }
+
+      .role,
+      .bio {
+        font-size: clamp(0.875rem, 2.5vw, 0.95rem);
+        line-height: 1.65;
+      }
+
+      .role {
+        margin: 0 0 1.25rem;
+        color: var(--muted);
+      }
+      .bio {
+        margin: 0 0 1.25rem;
+      }
+
+      nav {
+        font-size: 0.875rem;
+      }
+      nav span {
+        color: var(--muted);
+        margin: 0 0.4rem;
+      }
+
+      h1,
+      .role,
+      .bio,
+      nav {
+        overflow-wrap: anywhere;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: var(--rule);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        transition: text-decoration-color 150ms;
+      }
+
+      a:hover {
+        text-decoration-color: var(--fg);
+      }
+
+      a:focus-visible {
+        outline: 2px solid var(--fg);
+        outline-offset: 3px;
+        border-radius: 2px;
+      }
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 480px) {
+        main {
+          padding-top: 4.5rem;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        main {
+          animation: none;
+        }
+        a {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Duy Khanh</h1>
+      <p class="role">Full-stack developer</p>
+      <p class="bio">
+        I build web apps end to end, from the interface to the server. I work
+        mostly with React, Node.js, PHP, and TypeScript.
+      </p>
+      <nav aria-label="Links">
+        <a href="https://github.com/khanhbuiswe">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.linkedin.com/in/duykhanh99">LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="mailto:khanhbuiduy1999@gmail.com">Email</a>
+      </nav>
+    </main>
+  </body>
 </html>
